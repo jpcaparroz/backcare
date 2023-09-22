@@ -1,4 +1,68 @@
-body {
+@font-face {
+    font-family: "PoetseOne";
+    src: url("../assets/fonts/PoetsenOne.ttf") format("truetype");
+}
 
-    background: linear-gradient(0deg, rgba(246,189,96,1) 0%, rgba(247,237,226,1) 100%);
+:root {
+    --cor-1: #f7ede2;
+    --cor-2: #84a59d;
+    --cor-3: #f28482;
+}
+
+body {
+    background-color: var(--cor-2);
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+}
+
+h1 {
+    font-family: "PoetseOne", sans-serif;
+    color: var(--cor-1);
+
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+#startButton {
+    color: var(--cor-1);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 100;
+    letter-spacing: 0.8px;
+
+    width: 100px;
+    height: 30px;
+
+    margin-top: 50px;
+
+    border-radius: 70px;
+    border: none;
+    background: var(--cor-3);
+    box-shadow: -2px 3px 0px 0px rgba(0, 0, 0, 0.27);
+}
+
+#startButton:hover {
+    background-color: var(--cor-3);
+    cursor: pointer;
+}
+
+#startButton:active {
+    transform: translateY(2px); /* Move o botão para baixo quando pressionado */
 }
